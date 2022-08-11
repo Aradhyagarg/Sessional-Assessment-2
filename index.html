@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blogers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+
+    <!-- header -->
+    <header>
+      <nav class = "navbar">
+        <div class = "container">
+          <a href = "index.html" class = "navbar-brand"><img src="images/blog2.png" alt="Logo" width=150" height="80"></a>
+          <div class = "navbar-nav">
+            <a href = "#">Home</a>
+            <a href = "#blog">Blog</a>
+            <a href = "#form">Form</a>
+            <a href = "#footer">Footer</a>
+          </div>
+        </div>
+      </nav>
+      <div class = "banner">
+        <div class = "container">
+            <h1 class = "banner-title">
+              <span>Unique</span> Blogs
+            </h1>
+            <br>
+            <br>
+            <h1>
+            “Don’t focus on having a great blog. Focus on producing a blog that’s great for your readers.”
+          </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end of header -->
+    <!-- blog -->
+    <section class = "blog" id = "blog" >
+        <div class = "container">
+          <div class = "title">
+            <h2>Blogs section</h2>
+          </div>
+          <div class = "blog-content">
+            <!-- item -->
+            <div class = "blog-item">
+              <div class = "blog-img">
+                <img src = "images/blog3.jpg" height="300px" width="300px" alt = "">
+              </div>
+              <div class = "blog-text">
+                <span id="post1Id"></span>
+                <h2 id="post1Title"></h2>
+                <p id="post1Body"></p>
+                <a href = "#">Read More</a>
+              </div>
+            </div>
+            <!-- end of item -->
+            <!-- item -->
+            <div class = "blog-item">
+              <div class = "blog-img">
+                <img src = "images/blog4.jpg" height="300px" alt = "">
+              </div>
+              <div class = "blog-text">
+                <span id="post2Id"></span>
+                <h2 id="post2Title"></h2>
+                <p id="post2Body"></p>
+                <a href = "#">Read More</a>
+              </div>
+            </div>
+            <!-- end of item -->
+            <!-- item -->
+            <div class = "blog-item">
+              <div class = "blog-img">
+                <img src = "images/blog5.jpg" height="300px" alt = "">
+              </div>
+              <div class = "blog-text">
+                <span id="post3Id"></span>
+                <h2 id="post3Title"></h2>
+                <p id="post3Body"></p>
+                <a href = "#">Read More</a>
+              </div>
+            </div>
+            <!-- end of item -->
+            <!-- item -->
+            <div class = "blog-item">
+              <div class = "blog-img">
+                <img src = "images/blog6.jpg" height="300px" balt = "">
+              </div>
+              <div class = "blog-text">
+                <span id="post4Id"></span>
+                <h2 id="post4Title"></h2>
+                <p id="post4Body"></p>
+                <a href = "#">Read More</a>
+              </div>
+            </div>
+            <!-- end of item -->
+            <!-- item -->
+            <div class = "blog-item">
+              <div class = "blog-img">
+                <img src = "images/blog7.jpg" height="300px" alt = "">
+              </div>
+              <div class = "blog-text">
+                <span id="post5Id"></span>
+                <h2 id="post5Title"></h2>
+                <p id="post5Body"></p>
+                <a href = "#">Read More</a>
+              </div>
+            </div>
+            <!-- end of item -->
+            <!-- item -->
+            <div class = "blog-item">
+              <div class = "blog-img">
+                <img src = "images/blog8.jpg" height="300px" alt = "">
+              </div>
+              <div class = "blog-text">
+                <span id="post6Id"></span>
+                <h2 id="post6Title"></h2>
+                <p id="post6Body"></p>
+                <a href = "#">Read More</a>
+              </div>
+            </div>
+            <!-- end of item -->
+          </div>
+        </div>
+      </section>
+      <!-- end of blog -->
+      <br>
+      <div class = "title" id="form">
+        <h2>Form section</h2>
+      </div>
+      <div class="container">
+        <form action="/action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">User id</label>
+            <select id="country" name="country" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <div class="col-75">
+            <label for="fname">Id</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your id....">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Title</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Your Title..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Body</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Write Body.." style="height:200px"></textarea>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <input type="submit" value="Submit" onclick="loadDoc">
+        </div>
+        </form>
+      </div>
+      <br>
+
+      
+      <!-- footer -->
+    <footer>
+
+        <div class = "social-links" id="footer">
+          <a href = "https://www.facebook.com/"><i class = "fab fa-facebook-f"></i></a>
+          <a href = "https://www.linkedin.com/in/aradhya-garg-087320224/"><i class = "fab fa-linkedin"></i></a>
+          <a href = "https://www.instagram.com/"><i class = "fab fa-instagram"></i></a>
+          <a href = "https://in.pinterest.com/"><i class = "fab fa-pinterest"></i></a>
+        </div>
+        <div class="foot">
+        <span>Created By Aradhya Garg</span><br>
+        <span>© Copyright 2022. All Rights Reserved.</span>
+        </div>
+      </footer>
+      <!-- end of footer -->
+      </div>
+</body>
+</html>
